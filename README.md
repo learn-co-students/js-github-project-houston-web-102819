@@ -14,7 +14,10 @@ By default, all requests to https://api.github.com receive the v3 version of the
 </blockquote>
 
 ```text
-Accept: application/vnd.github.v3+json
+headers: {
+    'Content-Type': 'application/json',
+    Accept: application/vnd.github.v3+json
+}
 ```
 
 #### [User Search Endpoint](https://developer.github.com/v3/search/#search-users)
